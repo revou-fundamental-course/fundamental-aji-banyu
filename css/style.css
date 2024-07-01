@@ -5,7 +5,7 @@
   font-family: "poppins", sans-serif;
 }
 body {
-  height: 2000px;
+  /* height: 2000px; */
 }
 
 /* header styling start */
@@ -63,7 +63,7 @@ nav a:hover::after {
   min-height: 100vh;
   border: 1px solid;
   padding: 67px 6px 0;
-  background-image: url("../assets/2024-07-01\ 23\ 38\ 04.png");
+  background-image: url("../assets/VideoCapture_20240410-183512.jpg");
   background-size: cover;
 }
 .home-content {
@@ -214,3 +214,15 @@ button {
   border: 1px solid;
 }
 /* message styling end */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  .home {
+    background-position-x: 65%;
+    background-position-y: 66px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
