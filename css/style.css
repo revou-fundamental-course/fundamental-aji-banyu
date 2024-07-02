@@ -4,9 +4,6 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
-body {
-  /* height: 2000px; */
-}
 
 /* header styling start */
 .header {
@@ -64,7 +61,7 @@ body {
   min-height: 100vh;
   border: 1px solid;
   padding: 67px 6px 0;
-  background-image: url("../assets/VideoCapture_20240410-183512.jpg");
+  /* background-image: url("../assets/VideoCapture_20240410-183512.jpg"); */
   background-size: cover;
 }
 .home-content {
@@ -137,9 +134,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 3.5rem;
+  gap: 5rem;
 }
 .form-wrapper {
+  flex: 6;
   height: 17rem;
   width: 75rem;
   padding-left: 0;
@@ -206,6 +204,7 @@ button {
 }
 
 .info {
+  flex: 5.5;
   display: flex;
   align-items: center;
   height: 15rem;
@@ -213,8 +212,31 @@ button {
   left: 0;
   bottom: 0;
   border: 1px solid;
+  padding: 3rem 2rem;
+  margin-right: -2rem;
+}
+.info-content p {
+  line-height: 1.3;
+}
+.info-content p span {
+  font-weight: 600;
 }
 /* message styling end */
+
+/* footer styling sart */
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid;
+}
+footer p {
+  font-weight: 400;
+}
+/* footer styling end */
 
 /* media queris */
 /* Tablet */
