@@ -39,7 +39,37 @@
           <h1>Hi Monyet, Welcome to Website</h1>
           <p>ini adalah website latihan pertama</p>
         </div>
-        <div class="hero-image"></div>
+        <div class="hero-image-wrapper">
+          <div class="left-btn">
+            <button onclick="plusDivs(-1)">
+              <i class="bx bxs-chevron-left"></i>
+            </button>
+          </div>
+          <div class="slider">
+            <img
+              class="img-slideshow"
+              src="assets/VideoCapture_20240410-183512.jpg"
+              style="display: block"
+            />
+            <img
+              class="img-slideshow"
+              src="assets/2024-07-01 23 38 04.png"
+              style="display: none"
+            />
+            <img
+              class="img-slideshow"
+              src="assets/2.jpg"
+              style="display: none"
+            />
+            <!-- <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button> -->
+          </div>
+          <div class="right-btn">
+            <button onclick="plusDivs(1)">
+              <i class="bx bxs-chevron-right"></i>
+            </button>
+          </div>
+        </div>
       </main>
     </section>
     <!-- home content start -->
@@ -83,7 +113,6 @@
               </div>
             </div>
             <div class="form tgl-lahir">
-              <!--  -->
               <div class="input-judul form-item">
                 <p>Tangal Lahir</p>
                 <span>:</span>
@@ -97,25 +126,24 @@
                 <p>Jenis Kelamin</p>
                 <span>:</span>
               </div>
-              <div class="input-wrapper form-item radio">
+              <div class="input-wrapper radio form-item gender">
                 <input
                   type="radio"
+                  id="Laki-Laki"
+                  name="kelamin"
                   value="Laki-Laki"
-                  class="kelamin"
-                  name="kelamin"
                 />
-                Laki-Laki
+                <label for="Laki-Laki">Laki-Laki</label>
                 <input
                   type="radio"
-                  value="Perempuan"
-                  class="kelamin"
+                  id="Perempuan"
                   name="kelamin"
+                  value="Perempuan"
                 />
-                Perempuan
+                <label for="Perempuan">Perempuan</label>
               </div>
             </div>
             <div class="form pesan">
-              <!--  -->
               <div class="input-judul form-item pesan-item">
                 <p>Pesan</p>
                 <span>:</span>

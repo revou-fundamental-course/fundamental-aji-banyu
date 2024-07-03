@@ -84,11 +84,36 @@
   line-height: 2;
   font-size: 18px;
 }
-.hero-image {
+.hero-image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 30rem;
   border: 1px solid;
-  /* background-color: chartreuse; */
+}
+
+.left-btn,
+.right-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 70px;
+}
+
+.hero-image-wrapper button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.left-btn i,
+.right-btn i {
+  font-size: 60px;
 }
 /* home content styling start */
 
@@ -273,7 +298,6 @@ footer p {
     position: absolute;
     top: 100%;
     right: -110%;
-    /* right: 0; */
     background-color: yellow;
     width: 25rem;
     height: 100vh;
@@ -300,4 +324,20 @@ footer p {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+/* slide */
+
+.slider {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+}
+.slider img {
+  height: 100%;
+  width: auto;
+}
+.hero-img {
+  width: 800px;
+  height: 100%;
 }
