@@ -20,7 +20,7 @@ function formValue() {
   let pesan = document.getElementById("pesan").value;
 
   //   invalid input
-  if (nama == "" || tglLahir == "" || kelamin == "" || pesan == "") {
+  if (nama == "" || tglLahir == "" || kelamin == null || pesan == "") {
     alert("Input tidak boleh kosong");
   }
 
@@ -56,4 +56,4 @@ function showDivs(n) {
 
 setInterval(() => {
   plusDivs(1);
-}, 4000);
+}, 3000);

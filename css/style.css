@@ -76,6 +76,8 @@ body {
   align-items: center;
   border: 1px solid;
   padding: 52px 6px 0;
+  background-color: #000;
+  box-shadow: 0 -3px 40px 60px #010101;
 }
 .home-content {
   height: 40rem;
@@ -117,11 +119,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: burlywood;
+  overflow: hidden;
 }
 .slider img {
-  height: 100%;
-  width: auto;
-  transition: 0.3s;
+  height: auto;
+  width: 100%;
+  transition: 0.5s;
 }
 .hero-img {
   width: 800px;
