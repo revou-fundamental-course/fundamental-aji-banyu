@@ -16,8 +16,14 @@ document.addEventListener("click", function (e) {
 function formValue() {
   let nama = document.getElementById("nama").value;
   let tglLahir = document.getElementById("tgl").value;
-  let kelamin = document.querySelector('input[name="kelamin"]:checked').value;
+  let kelamin = document.querySelector(".kelamin:checked").value;
   let pesan = document.getElementById("pesan").value;
+
+  //   invalid input
+  if (nama == "" || tglLahir == "" || kelamin == "" || pesan == "") {
+    alert("Input tidak boleh kosong");
+    return false;
+  }
 
   console.log(nama);
 
