@@ -22,7 +22,6 @@ function formValue() {
   //   invalid input
   if (nama == "" || tglLahir == "" || kelamin == "" || pesan == "") {
     alert("Input tidak boleh kosong");
-    return false;
   }
 
   console.log(nama);
@@ -31,7 +30,6 @@ function formValue() {
   document.getElementById("sender-tglLahir").innerText = tglLahir;
   document.getElementById("sender-gender").innerText = kelamin;
   document.getElementById("sender-pesan").innerText = pesan;
-  return false;
 }
 
 // fungsi slideshow
