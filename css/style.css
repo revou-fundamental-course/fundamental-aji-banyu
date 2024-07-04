@@ -409,11 +409,25 @@ footer i:hover {
   html {
     font-size: 60%;
   }
+  /* header start */
   .header {
     padding: 5px 10px;
   }
   .logo-wrapper h1 {
     font-size: 20px;
+  }
+  /* header end */
+
+  /* home start */
+  .mboh {
+    margin-left: 2rem;
+  }
+  .mboh h1 {
+    font-size: 2.8rem;
+  }
+  .mboh p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
   .home-content {
     height: 100%;
@@ -428,12 +442,34 @@ footer i:hover {
     align-items: center;
     height: 100%;
   }
+  /* home end */
+
+  /* profile start */
+  .profile-content h1 {
+    margin-left: -5rem;
+  }
   .profile-items-wrapper {
     display: grid;
+    padding: 5rem 0rem;
   }
+  .profile-item {
+    margin: 0;
+  }
+  .profile-logo {
+    margin-bottom: 3rem;
+  }
+  .profile-item p {
+    font-size: 2rem;
+  }
+  /* profile end */
+
+  /* message start */
   .message-content {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .message h1 {
+    font-size: 2.2rem;
   }
   .form-container {
     flex-direction: column;
@@ -451,6 +487,7 @@ footer i:hover {
     width: 31rem;
     margin-left: -2.5rem;
   }
+  /* message end */
 }
 
 /* slide */
