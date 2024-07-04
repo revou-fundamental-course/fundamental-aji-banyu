@@ -14,12 +14,10 @@ document.addEventListener("click", function (e) {
 
 //        fungsi untuk validasi form
 function formValue() {
-  let kelamin = document.querySelector(".kelamin:checked").value;
   let nama = document.getElementById("nama").value;
   let tglLahir = document.getElementById("tgl").value;
+  let kelamin = document.querySelector(".kelamin:checked").value;
   let pesan = document.getElementById("pesan").value;
-
-  console.log(nama);
 
   document.getElementById("sender-nama").innerText = nama;
   document.getElementById("sender-tglLahir").innerText = tglLahir;
@@ -30,6 +28,47 @@ function formValue() {
   if (nama == "" || tglLahir == "" || kelamin == null || pesan == "") {
     alert("Input tidak boleh kosong");
   }
+
+  // menambahkan waktu
+
+  arrbulan = [
+    "Januari",
+    "Februari",
+    "Maret",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Agustus",
+    "September",
+    "Oktober",
+    "November",
+    "Desember",
+  ];
+  date = new Date();
+  millisecond = date.getMilliseconds();
+  detik = date.getSeconds();
+  menit = date.getMinutes();
+  jam = date.getHours();
+  hari = date.getDay();
+  tanggal = date.getDate();
+  bulan = date.getMonth();
+  tahun = date.getFullYear();
+
+  document.querySelector("#sender-time").innerText =
+    tanggal +
+    "-" +
+    arrbulan[bulan] +
+    "-" +
+    tahun +
+    "  " +
+    jam +
+    " : " +
+    menit +
+    " : " +
+    detik +
+    "." +
+    millisecond;
 }
 
 // fungsi slideshow
