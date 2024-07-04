@@ -14,15 +14,10 @@ document.addEventListener("click", function (e) {
 
 //        fungsi untuk validasi form
 function formValue() {
+  let kelamin = document.querySelector(".kelamin:checked").value;
   let nama = document.getElementById("nama").value;
   let tglLahir = document.getElementById("tgl").value;
-  let kelamin = document.querySelector(".kelamin:checked").value;
   let pesan = document.getElementById("pesan").value;
-
-  //   invalid input
-  if (nama == "" || tglLahir == "" || kelamin == null || pesan == "") {
-    alert("Input tidak boleh kosong");
-  }
 
   console.log(nama);
 
@@ -30,6 +25,11 @@ function formValue() {
   document.getElementById("sender-tglLahir").innerText = tglLahir;
   document.getElementById("sender-gender").innerText = kelamin;
   document.getElementById("sender-pesan").innerText = pesan;
+
+  //   invalid input
+  if (nama == "" || tglLahir == "" || kelamin == null || pesan == "") {
+    alert("Input tidak boleh kosong");
+  }
 }
 
 // fungsi slideshow
