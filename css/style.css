@@ -30,9 +30,8 @@ body {
   width: 50px;
   height: 50px;
   border: 1px solid;
-  border-radius: 50%;
-  background-color: #010101;
-  background-image: url(https://png.pngtree.com/png-clipart/20220627/original/pngtree-blue-shark-esport-logo-png-image_8209273.png);
+  background-color: transparent;
+  background-image: url(../assets/hiu.png);
   background-size: cover;
 }
 .logo-wrapper h1 {
@@ -48,7 +47,7 @@ body {
   display: inline-block;
   padding: 0 32px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #ededed;
   font-weight: 500;
 }
@@ -153,7 +152,7 @@ body {
 /* profile styling start */
 .profile {
   min-height: 30rem;
-  padding: 67px 1rem 0;
+  padding: 7rem 1rem 0;
 }
 .profile-content {
   padding: 1.5rem 7rem 1rem;
@@ -176,8 +175,8 @@ body {
   text-align: center;
 }
 .profile-logo {
-  width: 180px;
-  height: 180px;
+  width: 11rem;
+  height: 11rem;
   border: 1px solid;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -390,7 +389,7 @@ footer i:hover {
     top: 100%;
     right: -110%;
     background-color: rgba(1, 1, 1, 0.9);
-    width: 25rem;
+    width: 22rem;
     height: 100vh;
     transition: 0.3s;
   }
@@ -415,6 +414,9 @@ footer i:hover {
   }
   .logo-wrapper h1 {
     font-size: 20px;
+  }
+  .text-nav > a {
+    font-size: 2.3rem;
   }
   /* header end */
 
@@ -456,6 +458,8 @@ footer i:hover {
     margin: 0;
   }
   .profile-logo {
+    width: 20rem;
+    height: 20rem;
     margin-bottom: 3rem;
   }
   .profile-item p {

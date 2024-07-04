@@ -21,12 +21,15 @@ function formValue() {
 
   document.getElementById("sender-nama").innerText = nama;
   document.getElementById("sender-tglLahir").innerText = tglLahir;
-  document.getElementById("sender-gender").innerText = kelamin;
   document.getElementById("sender-pesan").innerText = pesan;
+  document.getElementById("sender-gender").innerText = kelamin;
 
   //   invalid input
   if (nama == "" || tglLahir == "" || kelamin == null || pesan == "") {
     alert("Input tidak boleh kosong");
+  }
+  if (document.querySelector("input").value == null) {
+    alert("input tidak boleh kosong");
   }
 
   // menambahkan waktu
